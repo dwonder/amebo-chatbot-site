@@ -59,49 +59,10 @@ header p {
     color: #b45309;
 }
 
-/* Chatbot Placeholder Styling */
-#chatbot-container {
-    padding: 0;
-    overflow: hidden;
-}
-
-.chatbot-header {
-    background-color: #f9a826; /* A friendly, vibrant yellow */
-    color: #333;
-    padding: 10px 20px;
-}
-
-.chatbot-header h3 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.chatbot-body {
-    padding: 20px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #777;
-}
-
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
     color: #888;
-}```
-
-#### **3. `script.js`**
-
-For now, this file is just a placeholder. When you integrate a real chatbot service, you will add its specific JavaScript code here.
-
-```javascript
-// This file is ready for your chatbot's integration code.
-// For example, when using Google Dialogflow Messenger, you would paste its <script> tag into the index.html file,
-// which would then interact with the rest of your page.
-
-console.log("Amebo website script loaded.");
-console.log("Awaiting chatbot integration...");
+}
