@@ -28,35 +28,85 @@ header h1 {
     font-size: 2.5rem;
 }
 
-header p {
-    margin: 0;
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
 /* Card Styling for Sections */
 .card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px 25px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .card h2 {
     margin-top: 0;
     color: #0d3b66;
+    border-bottom: 2px solid #f9a826;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
+
+/* --- NEW STYLES --- */
+
+/* Embedded Chatbot Container */
+.chatbot-iframe-container {
+    text-align: center; /* Center the iframe */
+}
+.chatbot-iframe-container iframe {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Responsive YouTube Video Container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Image Scroller Styles */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    /* This mask creates a fade-out effect on the edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+.slider {
+    display: flex;
+    /* This animation makes the magic happen */
+    animation: scroll 30s linear infinite;
+}
+.slider img {
+    height: 60px; /* Adjust height as needed */
+    margin: 0 40px;
+    object-fit: contain;
+}
+
+/* The scrolling animation */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* The -50% is key for the seamless loop */
+}
+
 
 /* Disclaimer Card Styling */
 .disclaimer-card {
     background-color: #fffbe6;
-    border-left: 5px solid #f59e0b; /* Amber color */
-}
-
-.disclaimer-card h2 {
-    color: #b45309;
+    border-left: 5px solid #f59e0b;
 }
 
 /* Footer Styling */
@@ -65,4 +115,5 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
     color: #888;
+    margin-top: 40px;
 }
