@@ -21,23 +21,6 @@
             </p>
         </section>
 
-        <!-- THIS IS WHERE THE CHATBOT WILL GO -->
-        <section id="chatbot-container" class="card">
-            <div class="chatbot-header">
-                <h3>Chat with Amebo</h3>
-            </div>
-            <div class="chatbot-body">
-                <p>Chatbot is loading...</p>
-                <p><em><script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-                <df-messenger
-                  intent="WELCOME"
-                  chat-title="Amebo"
-              agent-id="e80ecdfd-f50d-4098-865e-bafc40f10f28"
-              language-code="en"
-></df-messenger></em></p>
-            </div>
-        </section>
-
         <section class="disclaimer-card card">
             <h2>Important Disclaimer</h2>
             <p>
@@ -47,10 +30,31 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 - The Amebo Project (Volunteer-Driven)</p>
+        <p>© 2025 - The Amebo Project (Volunteer-Driven)</p>
     </footer>
 
-    <!-- Link to your JavaScript file -->
+    <!--
+    ===============================================================
+    DIALOGFLOW CHATBOT EMBED CODE
+    This script adds the chat widget to the bottom-right corner of your page.
+    ===============================================================
+    -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Amebo"
+      agent-id="e80ecdfd-f50d-4098-865e-bafc40f10f28"
+      language-code="en"
+    ></df-messenger>
+
+    <!--
+    ===============================================================
+    OPTIONAL JAVASCRIPT FILE
+    This file is not required for the chatbot to work.
+    It can be used for other custom features in the future.
+    ===============================================================
+    -->
     <script src="script.js"></script>
+
 </body>
 </html>
