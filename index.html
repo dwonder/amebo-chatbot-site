@@ -14,13 +14,58 @@
     </header>
 
     <main class="container">
+        <!-- Section 1: Chatbot Embedded Directly -->
         <section class="card">
-            <h2>About Amebo</h2>
-            <p>
-                Amebo is a non-profit, volunteer-driven project designed to help Nigerians understand their data rights under the Nigeria Data Protection Regulation (NDPR) and the General Data Protection Regulation (GDPR). Our goal is to make data protection simple and accessible for everyone.
-            </p>
+            <h2>Chat with Amebo</h2>
+            <p>Ask your data protection questions directly below.</p>
+            <div class="chatbot-iframe-container">
+                <iframe
+                    height="430"
+                    width="350"
+                    src="https://bot.dialogflow.com/e80ecdfd-f50d-4098-865e-bafc40f10f28"
+                    allow="microphone">
+                </iframe>
+            </div>
         </section>
 
+        <!-- Section 2: YouTube Video for Training -->
+        <section class="card">
+            <h2>Training & Resources</h2>
+            <p>Watch this short video to learn more about your data rights.</p>
+            <div class="video-container">
+                <!-- *** REPLACE THIS with your YouTube video's embed code *** -->
+                <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Section 3: Scrolling Image Carousel -->
+        <section class="card">
+            <h2>Our Partners & Supporters</h2>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <!-- Add your 5 image logos here. Use transparent PNGs for best results. -->
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+1" alt="Partner Logo 1">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+2" alt="Partner Logo 2">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+3" alt="Partner Logo 3">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+4" alt="Partner Logo 4">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+5" alt="Partner Logo 5">
+                    <!-- The images are duplicated below for a seamless loop effect -->
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+1" alt="Partner Logo 1">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+2" alt="Partner Logo 2">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+3" alt="Partner Logo 3">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+4" alt="Partner Logo 4">
+                    <img src="https://via.placeholder.com/150x80.png?text=Partner+5" alt="Partner Logo 5">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Disclaimer -->
         <section class="disclaimer-card card">
             <h2>Important Disclaimer</h2>
             <p>
@@ -33,27 +78,6 @@
         <p>© 2025 - The Amebo Project (Volunteer-Driven)</p>
     </footer>
 
-    <!--
-    ===============================================================
-    DIALOGFLOW CHATBOT EMBED CODE
-    This script adds the chat widget to the bottom-right corner of your page.
-    ===============================================================
-    -->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      intent="WELCOME"
-      chat-title="Amebo"
-      agent-id="e80ecdfd-f50d-4098-865e-bafc40f10f28"
-      language-code="en"
-    ></df-messenger>
-
-    <!--
-    ===============================================================
-    OPTIONAL JAVASCRIPT FILE
-    This file is not required for the chatbot to work.
-    It can be used for other custom features in the future.
-    ===============================================================
-    -->
     <script src="script.js"></script>
 
 </body>
